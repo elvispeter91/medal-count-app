@@ -1,6 +1,11 @@
-"use client"
+"use client";
+
+import AppHeader from "@/lib/components/blocks/appHeader/appHeader";
+
 export default function Home() {
   return (
-    <div> hello </div>
+    <div>
+      <AppHeader />;
+    </div>
   );
 }
