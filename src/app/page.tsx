@@ -27,12 +27,13 @@ export default function Home() {
   if (data.length === 0) return <p>No data available.</p>;
 
   return (
-    
-      <div>
-        <AppHeader />
-        <AppMedalFilterHeader handleOnClick={handleOnClick} sortOption={sortOption}  />
-        <AppMedalCountDisplay medalData={data} />
-      </div>
-    
+    <div>
+      <AppHeader />
+      <AppMedalFilterHeader
+        handleOnClick={handleOnClick}
+        sortOption={sortOption}
+      />
+      <AppMedalCountDisplay medalData={data} />
+    </div>
   );
 }
