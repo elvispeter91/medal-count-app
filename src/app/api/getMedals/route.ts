@@ -3,8 +3,8 @@ import data from "./medals.json";
 
 export async function GET() {
   
+  // comment to simulate an error
   return NextResponse.json(data);
-  // uncomment to simulate an error
   try {
     throw new Error("Something went wrong!");
   } catch (error) {
