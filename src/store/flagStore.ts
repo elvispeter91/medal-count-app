@@ -16,3 +16,8 @@ export const useMedalStore = create<MedalStoreType>((set) => ({
   setSortOption: (sortOption: BtnType) => set(() => ({ sortOption })),
 }));
 
+
+export const setMedalDataArray = (data: MedalData[]) => {
+  const { setMedalData } = useMedalStore.getState();
+  setMedalData(data);
+};
